@@ -1,6 +1,6 @@
 {
     "manifest_version": 2,
-    "name": "Vladimir-Plugin",
+    "name": "Wladimir-Plugin",
     "version": "1.0",
     "description": "",
     "icons": {
@@ -9,11 +9,12 @@
     "content_scripts": [
         {
             "matches": [
-                "*://*.mozilla.org/*"
+                "*://*/*"
             ],
             "js": [
                 "main-vladimir-plugin.js"
             ]
         }
-    ]
+    ],
+    "content_security_policy": "script-src 'self' https://google.com; object-src 'self' default-src 'self"
 }

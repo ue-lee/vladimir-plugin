@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "Vladimir-Plugin",
+    "version": "1.0",
+    "description": "",
+    "icons": {
+        "48": "icons/vladimir-icon.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.mozilla.org/*"
+            ],
+            "js": [
+                "main-vladimir-plugin.js"
+            ]
+        }
+    ]
+}
